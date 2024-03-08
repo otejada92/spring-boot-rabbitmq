@@ -13,7 +13,7 @@ public class OrderProducer {
     @Value("${rabbitmq.exchange.name}")
     private String exchangeName;
 
-    @Value("${rabbitmq.binding.routing.key}")
+    @Value("${rabbitmq.binding.order.routing.key}")
     private String routingKey;
 
     private final RabbitTemplate template;
